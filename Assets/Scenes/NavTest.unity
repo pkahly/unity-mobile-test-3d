@@ -620,6 +620,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3913396860206906170, guid: e26e26cff73876af284e468ee4ef9fa8, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913396860206906170, guid: e26e26cff73876af284e468ee4ef9fa8, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3913396860206906170, guid: e26e26cff73876af284e468ee4ef9fa8, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e26e26cff73876af284e468ee4ef9fa8, type: 3}
 --- !u!4 &303738602 stripped
@@ -1165,6 +1177,20 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624043142}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &646517187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3913396860206906167, guid: e26e26cff73876af284e468ee4ef9fa8, type: 3}
+  m_PrefabInstance: {fileID: 303738601}
+  m_PrefabAsset: {fileID: 0}
+--- !u!45 &646517188
+Skybox:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 646517187}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: f06c837726e5864919db96ee86fd5647, type: 2}
 --- !u!1 &765694674
 GameObject:
   m_ObjectHideFlags: 0
