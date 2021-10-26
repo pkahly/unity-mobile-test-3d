@@ -214,8 +214,70 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1001 &288250896
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7401894081399572630, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_Name
+      value: Car
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 182.72887
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.5351
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 388.46967
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+--- !u!4 &288250897 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7922711214802801196, guid: b274fbb0dae7e43748e634aa71578908, type: 3}
+  m_PrefabInstance: {fileID: 288250896}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &917815862
 GameObject:
   m_ObjectHideFlags: 0
@@ -228,6 +290,7 @@ GameObject:
   - component: {fileID: 917815864}
   - component: {fileID: 917815863}
   - component: {fileID: 917815866}
+  - component: {fileID: 917815867}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -291,7 +354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &917815866
 MonoBehaviour:
@@ -305,12 +368,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ac4d6821d3179573bb016b855e68c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  depth: 20
-  width: 256
-  height: 256
+  depth: 40
+  width: 2048
+  height: 2048
   scale: 20
   offsetX: 100
   offsetY: 100
+--- !u!114 &917815867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 917815862}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81fe195562332d04ead2688a86c7325b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uID: 1304831854
+  terrain: {fileID: 917815864}
+  splatResoWidth: 1024
+  splatResoHeight: 1024
+  splatBackground: {r: 0, g: 0, b: 0, a: 1}
+  splatForeground: {r: 1, g: 1, b: 1, a: 1}
+  splatWidth: 30
+  isSplatSkipBridges: 0
+  isSplatSkipTunnels: 0
+  isSplatSingleRoad: 0
+  splatSingleChoiceIndex: 0
+  roadSingleChoiceUID: 
 --- !u!1 &1534610442
 GameObject:
   m_ObjectHideFlags: 0
@@ -322,6 +409,7 @@ GameObject:
   - component: {fileID: 1534610445}
   - component: {fileID: 1534610444}
   - component: {fileID: 1534610443}
+  - component: {fileID: 1534610446}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -394,3 +482,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1534610446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534610442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5231ea27c22ddda6b1ab4d506257556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  offset: {x: 0, y: 5, z: -10}
+  target: {fileID: 288250897}
+  translateSpeed: 10
+  rotationSpeed: 10
